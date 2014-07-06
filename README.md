@@ -1,5 +1,5 @@
 # CI Drupal Profile
-Sample installation profile for the [continuous integration](balintk.com/ciworkshop) workshop.
+Sample installation profile for the [continuous integration workshop](http://balintk.com/ciworkshop).
 
 ## Installed modules
 * Adminimal Administration Menu
