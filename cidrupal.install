@@ -1,0 +1,21 @@
+<?php
+
+/**
+ * @file
+ * Install, update, and uninstall functions for the CI Drupal profile.
+ */
+
+/**
+ * Implements hook_install().
+ */
+function cidrupal_install() {
+  // Enable our themes: Bootstrap and Adminimal (the latter is for
+  // awesome looking administration).
+  theme_enable(array('bootstrap', 'adminimal'));
+  // Set the enabled themes as defaults.
+  variable_set('theme_default', 'bootstrap');
+  variable_set('admin_theme', 'adminimal');
+  // Bootstrap needs jQuery 1.7, so let it be — with some help from the jQuery
+  // Update module.
+  variable_set('jquery_update_jquery_version', '1.7');
+}

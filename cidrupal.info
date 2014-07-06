@@ -1,0 +1,21 @@
+name = CI Drupal
+description = Sample installation profile
+core = 7.x
+version = 7.x-1.x-dev
+
+; ======== CORE DEPENDENCIES ==========
+
+dependencies[] = block;
+
+; ======= CONTRIB DEPENDENCIES ========
+
+dependencies[] = admin_menu
+dependencies[] = adminimal_admin_menu
+dependencies[] = ctools
+dependencies[] = devel
+dependencies[] = jquery_update
+dependencies[] = module_filter
+dependencies[] = views
+dependencies[] = views_ui
+
+; ===== CUSTOM MODULE DEPENDENCIES ====
