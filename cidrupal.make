@@ -39,7 +39,7 @@ projects[views][subdir] = contrib
 ; =================== THEMES ====================
 
 ; ==> Adminimal
-projects[adminimal_theme][version] = 1.4
+projects[adminimal_theme][version] = 1.17
 projects[adminimal_theme][subdir] = contrib
 
 ; ==> Bootstrap
