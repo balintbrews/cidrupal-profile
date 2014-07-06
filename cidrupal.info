@@ -5,7 +5,8 @@ version = 7.x-1.x-dev
 
 ; ======== CORE DEPENDENCIES ==========
 
-dependencies[] = block;
+dependencies[] = block
+dependencies[] = field_ui
 
 ; ======= CONTRIB DEPENDENCIES ========
 
