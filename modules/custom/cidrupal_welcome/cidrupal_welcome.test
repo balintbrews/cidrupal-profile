@@ -1,0 +1,43 @@
+<?php
+
+/**
+ * @file
+ * Tests for CI Drupal Welcome module.
+ */
+
+ /**
+  * Tests CI Drupal Welcome module's functionality.
+  */
+class CIDrupalWelcomeWebTestCase extends CIDrupalWebTestCase {
+
+  protected $testUser;
+  
+  /**
+   * Implements getInfo().
+   */
+  public static function getInfo() {
+    return array(
+      'name' => 'CI Drupal Welcome',
+      'description' => 'Tests CI Drupal Welcome.',
+      'group' => 'CI Drupal',
+    );
+  }
+
+  /**
+   * Implements setUp().
+   */
+  public function setUp() {
+    parent::setUp();
+    $this->testUser = $this->drupalCreateUser();
+  }
+
+  /**
+   * Test case: Tests if the welcome message is shown properly.
+   */
+  protected function testLoginMessage() {
+    $this->drupalLogin($this->testUser);
+    $message = t('Hello @name!', array('@name' => $this->testUser->name));
+    $this->assertText($message, 'Welcome message found.');
+  }
+
+}
