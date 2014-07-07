@@ -9,9 +9,6 @@
  * Implements hook_user_login().
  */
 function cidrupal_welcome_user_login(&$edit, $account) {
-  $variables = array(
-    'account' => $account,
-  );
-  drupal_set_message(t('Hello !name!', array('!name' => theme('username', $variables))));
+  drupal_set_message(t('Hello @name!', array('@name' => $account->name)));
 }
 
