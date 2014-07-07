@@ -43,7 +43,6 @@ projects[adminimal_theme][version] = 1.17
 projects[adminimal_theme][subdir] = contrib
 
 ; ==> Bootstrap
-projects[bootstrap][download][type] = git
-projects[bootstrap][download][branch] = 7.x-3.x
+projects[bootstrap][download][version] = 3.x-dev
 projects[bootstrap][subdir] = contrib
 
