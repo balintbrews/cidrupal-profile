@@ -36,7 +36,7 @@ class CIDrupalWelcomeWebTestCase extends CIDrupalWebTestCase {
    */
   protected function testLoginMessage() {
     $this->drupalLogin($this->testUser);
-    $message = t('Hi @name!', array('@name' => $this->testUser->name));
+    $message = t('Hello @name!', array('@name' => $this->testUser->name));
     $this->assertText($message, 'Welcome message found.');
   }
 
